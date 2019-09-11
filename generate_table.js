@@ -18,8 +18,8 @@ function generateTableHead(table, data) {
           }
       } while (i > 0);
       generateTable(table, data);
-    }
-    function generateTable(table, data) {
+}
+function generateTable(table, data) {
       for (let element of data) {
         let row = table.insertRow();
         for (key in element) {
@@ -28,8 +28,8 @@ function generateTableHead(table, data) {
           cell.appendChild(text);
         }
       }
-    }
-    function deleteChild(element) {
+}
+function deleteChild(element) {
       var e = element;
       //e.firstElementChild can be used.
       var child = e.lastElementChild;
@@ -37,4 +37,4 @@ function generateTableHead(table, data) {
           e.removeChild(child);
           child = e.lastElementChild;
       }
-    }
+}
